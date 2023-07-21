@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension ES6 Import Test",
+  "version": "0.0.1",
+  "description": "Chrome Extension ES6 Import Test",
+  "author": "otiai10, okicarde",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/js/content_script.js"]
+    }
+  ],
+  "permissions": ["scripting"],
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["src/*"]
+    }
+  ]
+}
